@@ -1,0 +1,249 @@
+﻿@model olxClone.Models.Item
+
+@{
+    ViewBag.Title = "view_item";
+}
+
+
+<style>
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        margin: 0;
+        color: #f4f5f7;
+        font: 12px/15px Arial, Helvetica, sans-serif;
+        height: 100%;
+        min-width: 1130px;
+    }
+
+    img {
+        border-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        outline: none;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        background-color: transparent;
+    }
+
+    input,
+    textarea,
+    select {
+        font: 100% Arial, Helvetica, sans-serif;
+        vertical-align: middle;
+        color: #000;
+        outline: none;
+    }
+
+    form, fieldset {
+        margin: 0;
+        padding: 0;
+        border-style: none;
+    }
+
+    button::-moz-focus-inner {
+        padding: 0;
+        margin: 0;
+    }
+
+    header, footer, article, section, nav, figure, aside, main {
+        display: block;
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        overflow: hidden;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .layout {
+        overflow: hidden;
+    }
+
+    .left {
+        width: 75%;
+        float: left;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+        .left h1 {
+            margin: 0;
+            text-align: center;
+            display: block;
+            color: #000;
+        }
+
+        .left a {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .left img {
+            width: 100%;
+            display: block;
+            height: auto;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .left span {
+            display: block;
+            color: #000;
+            padding: 10px;
+        }
+
+    .right {
+        width: 25%;
+        float: right;
+    }
+
+    .txt-tag {
+        display: block;
+        background: #F90;
+        font-size: 24px;
+        line-height: 27px;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .user-img {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin: 10px 0 10px 5px;
+        border-radius: 100%;
+    }
+
+    .frame {
+        padding: 5px 20px;
+        overflow: hidden;
+    }
+
+    .user-area {
+        overflow: hidden;
+        margin: 0 0 10px;
+        background: #B1DFFC;
+    }
+
+    .user-name {
+        text-transform: capitalize;
+        font-size: 20px;
+        line-height: 36px;
+        color: #000;
+    }
+
+    .phone {
+        background: #B1DFFC;
+        display: block;
+        padding: 10px 20px;
+    }
+
+        .phone a {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            font-size: 18px;
+            line-height: 21px;
+            padding: 0 0 0 30px;
+        }
+
+            .phone a:hover {
+                text-decoration: none;
+                color: #999;
+            }
+
+            .phone a:before {
+                position: absolute;
+                top: 2px;
+                left: 0;
+                background: url(../image/h_icon_phone_b.png) no-repeat;
+                background-size: 100% 100%;
+                width: 20px;
+                height: 20px;
+                content: '';
+            }
+
+    .tags {
+        margin: 0 -5%;
+        padding: 0;
+        list-style: none;
+        letter-spacing: -5px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+        .tags li {
+            width: 20%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px 0;
+            margin: 0 1% 20px;
+            border: 1px solid #ccc;
+            letter-spacing: normal;
+        }
+
+            .tags li img {
+                max-width: 100px;
+                margin: 0 auto 10px;
+                display: block;
+            }
+
+            .tags li a {
+                display: inline-block;
+                vertical-align: top;
+            }
+</style>
+
+
+    <div class="container">
+      @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+        
+            <div id="wrapper">
+                <div class="layout">
+                    <div class="left">
+                        <h1>@Model.itemtitle</h1>
+                        <a href="#">@Model.itemstate</a>
+                        <img src="@Href(@Model.itemimage)" width="500" height="500" alt="image description">
+                        
+                        <span>@Model.itemdiscription</span>
+                    </div>
+                    <div class="right">
+                        <span class="txt-tag">@Model.itemid</span>
+                        <div class="user-area">
+                            <img class="user-img" width="50" height="50px" src="@Href("~/Images/userimg.jpg")">
+                            <div class="frame">
+                                <span class="user-name">@ViewBag.username</span>
+                            </div>
+                        </div>
+                        <span class="phone"><a href="tel:03235744831">@Model.itemphone</a></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+

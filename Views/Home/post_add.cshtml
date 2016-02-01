@@ -1,0 +1,131 @@
+﻿@{
+    ViewBag.Title = "post_add";
+}
+
+    <div class="container">
+        
+        @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+
+        <form method="post" enctype="multipart/form-data" action="/home/temp3" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Add Title:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="title" placeholder="Enter title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">price</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="price" placeholder="Enter title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Select Catgory:</label>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <select class="form-control" name="catagory">
+                            <option>Dogs</option>
+                            <option>Aquariums</option>
+                            <option>Birds</option>
+                            <option>Cats</option>
+                            <option>Pet_Food</option>
+                            <option>Other_Animals</option>
+                            <option>Books_Magazines</option>
+                            <option>Musical_Instruments</option>
+                            <option>Sports_Equipments</option>
+                            <option>Gym_Fitness</option>
+                            <option>Coins_Collectibles</option>
+                            <option>Other_Hobbies</option>
+                            <option>Computer_Laptops_Accessories</option>
+                            <option>CDs_DVDs</option>
+                            <option>Cameras_Accessories</option>
+                            <option>Video_Games_Consoles</option>
+                            <option>TV_Video_Audio</option>
+                            <option>Other_Electronics</option>
+                            <option>Clothes</option>
+                            <option>Footwear</option>
+                            <option>jewellery</option>
+                            <option>Bags_Luggage</option>
+                            <option>Accessories</option>
+                            <option>watches</option>
+                            <option>Health_Beauty</option>
+                            <option>Furniture</option>
+                            <option>Decore_Furnishing</option>
+                            <option>Fridge_AC_WashingMachine</option>
+                            <option>Home_kitchen_Appliances</option>
+                            <option>Paintings_Handicrafts</option>
+                            <option>Other_Household_Items</option>
+                            <option>Customer_Services</option>
+                            <option>IT</option>
+                            <option>Online</option>
+                            <option>Marketing</option>
+                            <option>Advertising</option>
+                            <option>Sales</option>
+                            <option>Clerical_Administration</option>
+                            <option>Human_Resources</option>
+
+                            <option>Education</option>
+                            <option>OtherJobs</option>
+                            <option>Stollers</option>
+                            <option>Kids_Furniture</option>
+                            <option>Car_Seats</option>
+                            <option>Nutritions</option>
+                            <option>Clothes_footwear</option>
+                            <option>Toys_Games</option>
+                            <option>Other_products</option>
+                            <option>Mobile_Phones</option>
+                            <option>Tablets</option>
+                            <option>Accessories</option>
+                            <option>Houses</option>
+                            <option>Apartments</option>
+                            <option>Lands_plots</option>
+                            <option>Shops</option>
+                            <option>Motorcycles</option>
+
+                            <option>Scooters</option>
+                            <option>Bicycles</option>
+                            <option>Commercial_Vehicals</option>
+                            <option>Other_Vehicals</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Description:</label>
+                <div class="col-sm-4">
+                    <textarea type="text" class="form-control" name="description" placeholder="Include the brand, model, age and accessories"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Phone:</label>
+                <div class="col-sm-4">
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Enter Phone number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Add Location:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="state" placeholder="Enter City">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Upload Image:</label>
+                <div class="col-sm-4">
+                    <input type="file" class="form-control file" name="image">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+﻿@model List<olxClone.Models.Item>
+@{
+    ViewBag.Title = "UserAdd";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Adds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+
+
+        @foreach (var item in Model)
+        {      
+                <div class=" panel-group">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">@item.itemtitle</div>
+                        <div class="panel-body">
+                            <a href="/Home/view_item/?itemid=@item.itemid">
+                                <div>
+                                    <img src="@Href(@item.itemimage)" width="75" height="75" alt="image description">
+                                </div>
+                                @item.itemdiscription
+
+                            </a>
+                            <div >
+                                <a href="/Home/UserAddDel/?itemid=@item.itemid">
+                                    <input type="button" name="delete" value="Delete" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+        }
+
+
+    </div>
+
+</body>
+

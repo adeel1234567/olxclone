@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Home_Furnitures";
+}
+
+<h2>Home_Furnitures</h2>
+
+<body> 
+ <style>
+        .tags {
+            margin: 0 -5%;
+            padding: 0;
+            list-style: none;
+            letter-spacing: -5px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+            .tags li {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px 0;
+                margin: 0 1% 20px;
+                border: 1px solid #ccc;
+                letter-spacing: normal;
+            }
+
+                .tags li img {
+                    max-width: 100px;
+                    margin: 0 auto 10px;
+                    display: block;
+                }
+
+                .tags li a {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+    </style>
+    
+    <div class="bs-example">
+        <div class="container">
+            @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Furniture" class="thumbnail">
+                        Furniture
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Decore_Furnishing" class="thumbnail">
+                        Decore & Furnishing
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Fridge_AC_WashingMachine" class="thumbnail">
+                        Fridge - AC - washing machine
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Home_kitchen_Appliances" class="thumbnail">
+                        Home & kitchen Appliances
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Paintings_Handicrafts" class="thumbnail">
+                        Paintings & Handicrafts
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Other_Household_Items" class="thumbnail">
+                        Other Household Items
+                    </a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+</body>

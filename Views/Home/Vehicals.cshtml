@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Vehicals";
+}
+
+<body> 
+ <style>
+        .tags {
+            margin: 0 -5%;
+            padding: 0;
+            list-style: none;
+            letter-spacing: -5px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+            .tags li {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px 0;
+                margin: 0 1% 20px;
+                border: 1px solid #ccc;
+                letter-spacing: normal;
+            }
+
+                .tags li img {
+                    max-width: 100px;
+                    margin: 0 auto 10px;
+                    display: block;
+                }
+
+                .tags li a {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+    </style>
+    
+    <div class="bs-example">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Cars" class="thumbnail">
+                        Cars
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Motorcycles" class="thumbnail">
+                        Motorcycles
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Scooters" class="thumbnail">
+                        Scooters
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Bicycles" class="thumbnail">
+                        Bicycles
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Commercial_Vehicals" class="thumbnail">
+                        Commercial Vehicals
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Other_Vehicals" class="thumbnail">
+                        Other Vehicals
+                    </a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+</body>

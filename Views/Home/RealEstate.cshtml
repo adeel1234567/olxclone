@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "RealEstate";
+}
+
+<body> 
+ <style>
+        .tags {
+            margin: 0 -5%;
+            padding: 0;
+            list-style: none;
+            letter-spacing: -5px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+            .tags li {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px 0;
+                margin: 0 1% 20px;
+                border: 1px solid #ccc;
+                letter-spacing: normal;
+            }
+
+                .tags li img {
+                    max-width: 100px;
+                    margin: 0 auto 10px;
+                    display: block;
+                }
+
+                .tags li a {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+    </style>
+    
+    <div class="bs-example">
+        <div class="container">
+            @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Houses" class="thumbnail">
+                        Houses
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Apartments" class="thumbnail">
+                        Apartments
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Lands_plots" class="thumbnail">
+                        Lands & plots
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Shops" class="thumbnail">
+                        Shops
+                    </a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+</body>

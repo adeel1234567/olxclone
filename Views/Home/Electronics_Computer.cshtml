@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Electronics_Computer";
+}
+
+
+<body> 
+ <style>
+        .tags {
+            margin: 0 -5%;
+            padding: 0;
+            list-style: none;
+            letter-spacing: -5px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+            .tags li {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px 0;
+                margin: 0 1% 20px;
+                border: 1px solid #ccc;
+                letter-spacing: normal;
+            }
+
+                .tags li img {
+                    max-width: 100px;
+                    margin: 0 auto 10px;
+                    display: block;
+                }
+
+                .tags li a {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+    </style>
+    
+    <div class="bs-example">
+        <div class="container">
+            @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Computer_Laptops_Accessories" class="thumbnail">
+                        Computer, Laptops & Accessories
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=CDs_DVDs" class="thumbnail">
+                        CDs - DVDs
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Cameras_Accessories" class="thumbnail">
+                        Cameras & Accessories
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Video_Games_Consoles" class="thumbnail">
+                        Video Games and Consoles
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=TV_Video_Audio" class="thumbnail">
+                        TV - Video - Audio
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Other_Electronics" class="thumbnail">
+                        Other Electronics
+                    </a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+</body>

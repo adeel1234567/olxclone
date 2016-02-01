@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Kids";
+}
+
+<body> 
+ <style>
+        .tags {
+            margin: 0 -5%;
+            padding: 0;
+            list-style: none;
+            letter-spacing: -5px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+            .tags li {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px 0;
+                margin: 0 1% 20px;
+                border: 1px solid #ccc;
+                letter-spacing: normal;
+            }
+
+                .tags li img {
+                    max-width: 100px;
+                    margin: 0 auto 10px;
+                    display: block;
+                }
+
+                .tags li a {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+    </style>
+    
+    <div class="bs-example">
+        <div class="container">
+            @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Stollers" class="thumbnail">
+                        Stollers
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Kids_Furniture" class="thumbnail">
+                        Kids Furniture
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Car_Seats" class="thumbnail">
+                        Car Seats
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Nutritions" class="thumbnail">
+                        Nutritions
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Clothes_footwear" class="thumbnail">
+                        Clothes & footwear
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Toys_Games" class="thumbnail">
+                        Toys & Games
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Other_products" class="thumbnail">
+                        Other kids products
+                    </a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+</body>

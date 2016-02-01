@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Books_Sports";
+}
+
+<h2>Books_Sports</h2>
+<head>
+    <title>Bootstrap Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body> 
+ <style>
+        .tags {
+            margin: 0 -5%;
+            padding: 0;
+            list-style: none;
+            letter-spacing: -5px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+            .tags li {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px 0;
+                margin: 0 1% 20px;
+                border: 1px solid #ccc;
+                letter-spacing: normal;
+            }
+
+                .tags li img {
+                    max-width: 100px;
+                    margin: 0 auto 10px;
+                    display: block;
+                }
+
+                .tags li a {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+    </style>
+    
+    <div class="bs-example">
+        <div class="container">
+            @Html.Partial("~/Views/Shared/navigationbar_login.cshtml");
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Books_Magazines" class="thumbnail">
+                        Books & Magazines
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Musical_Instruments" class="thumbnail">
+                        Musical Instruments
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Sports_Equipments" class="thumbnail">
+                        Sports Equipments
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="/Home/index/?a=Gym_Fitness" class="thumbnail">
+                        Gym & Fitness
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Coins_Collectibles" class="thumbnail">
+                        Coins & Collectibles
+                    </a>
+                </div>
+                  <div class="col-xs-3">
+                    <a href="/Home/index/?a=Other_Hobbies" class="thumbnail">
+                        Other Hobbies
+                    </a>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+</body>
